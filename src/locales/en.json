@@ -1,0 +1,12 @@
+{
+  "title": "Health Monitor System",
+  "heartRate": "Heart Rate",
+  "spo2": "SpO2",
+  "hrv": "HRV",
+  "textSize": "Text Size",
+  "small": "Small",
+  "medium": "Medium",
+  "large": "Large",
+  "switchLanguage": "中文",
+  "login": "Login"
+}

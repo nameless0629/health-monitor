@@ -1,0 +1,12 @@
+{
+  "title": "健康監測系統",
+  "heartRate": "心律",
+  "spo2": "血氧",
+  "hrv": "HRV",
+  "textSize": "文字大小",
+  "small": "小",
+  "medium": "中",
+  "large": "大",
+  "switchLanguage": "English",
+  "login": "登入"
+}

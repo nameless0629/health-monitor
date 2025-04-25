@@ -1,0 +1,171 @@
+/* === 全域設定 === */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #222; /* 深色背景讓白框顯眼 */
+}
+
+/* === Header 樣式 === */
+.header {
+  background-color: #3b3b3b;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.controls button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.controls button:hover {
+  text-decoration: underline;
+}
+
+/* === Main 區域（Sidebar + Content） === */
+.main-content {
+  display: flex;
+  height: calc(100% - 60px); /* 扣掉 header 高度 */
+  transition: all 0.3s ease;
+}
+
+/* === Sidebar 樣式 === */
+.sidebar {
+  width: 200px;
+  min-width: 200px;
+  background-color: #bdbdbd;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+.user-button {
+  padding: 12px 16px;
+  border-bottom: 1px solid #888;
+  cursor: pointer;
+  background-color: #c9c9c9;
+}
+
+.user-button:hover {
+  background-color: #a0a0a0;
+}
+
+/* === DataDisplay 樣式 === */
+.data-display {
+  flex: 1;
+  background-color: #e4e4e4;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 30px;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: font-size 0.2s ease;
+}
+
+
+/* 動態文字大小樣式 */
+.text-small {
+  font-size: 14px;
+}
+
+.text-medium {
+  font-size: 18px;
+}
+
+.text-large {
+  font-size: 24px;
+}
+
+/* === Login Modal === */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.login-modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.user-option {
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.user-option.selected {
+  background-color: #e0f7fa;
+  font-weight: bold;
+}
+
+.user-option:hover {
+  background-color: #f0f0f0;
+}
+
+.user-divider {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
